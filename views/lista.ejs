@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head')%>
+<body>
+    <%- include('./partials/header')%>
+    <main>
+        <h1 class="nombre">BIENVENIDOS A PAPELERIA COPY</h1>
+        <div class="titulo">Lista de productos</div>
+        <br>
+    
+        <div class="container">
+        
+        <% productos.forEach(productos=> { %>
+            <section>
+              <%- include("producto.ejs", {productos: productos}) %>
+            </section>
+            <% }) %>
+    </main> 
+</div>
+</body>
+</html>
